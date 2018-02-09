@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+InClass04
+Prayas Rode and Jacob Stern
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.praya.inclass04.Main2Activity">
+
+    <TextView
+        android:id="@+id/selectPasswordCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/SelectPasswordCountText" />
+
+    <SeekBar
+        android:id="@+id/passwordCountSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/selectPasswordCount"
+        android:layout_marginTop="16dp"
+        android:max="9"
+        android:min="1" />
+
+    <TextView
+        android:id="@+id/passwordCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/selectPasswordCount"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31dp"
+        android:text="@string/paswordCountDefault" />
+
+    <TextView
+        android:id="@+id/setPasswordLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/selectPasswordCount"
+        android:layout_below="@+id/passwordCountSeekBar"
+        android:layout_marginTop="49dp"
+        android:text="@string/setPasswordLengthText" />
+
+    <TextView
+        android:id="@+id/passwordLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setPasswordLength"
+        android:layout_alignEnd="@+id/passwordCount"
+        android:text="@string/passwordLengthDefault" />
+
+    <SeekBar
+        android:id="@+id/passwordLengthSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/setPasswordLength"
+        android:layout_marginTop="48dp"
+        android:max="15"
+        android:min="8" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/setPasswordLength"
+        android:layout_below="@+id/passwordLengthSeekbar"
+        android:layout_marginTop="42dp"
+        android:text="@string/passwordText" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/generatePasswordThreadButton"
+        android:layout_toStartOf="@+id/passwordLength" />
+
+    <Button
+        android:id="@+id/generatePasswordThreadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="@string/GeneratePasswordThreadButtonText" />
+
+    <Button
+        android:id="@+id/generatePasswordAsyncButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generatePasswordThreadButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/generatePasswordAsyncText" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <!--
+    InClass04
+    Prayas Rode and Jacob Stern
+    -->
+    <string name="app_name">InClass04</string>
+    <string name="launcherMessage">Welcome to InClass 04</string>
+    <string name="SelectPasswordCountText">Select Passwords Count:</string>
+    <string name="setPasswordLengthText">Set Password Length:</string>
+    <string name="passwordText">Password:</string>
+    <string name="GeneratePasswordThreadButtonText">Generate Passwords (Thread)</string>
+    <string name="generatePasswordAsyncText">Generate Passwords (Async Task)</string>
+    <string name="paswordCountDefault">1</string>
+    <string name="passwordLengthDefault">8</string>
+</resources>
